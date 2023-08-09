@@ -60,7 +60,7 @@
 }
 .pagination__number button.active {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  background-image: url(C:\Users\ASUS\Desktop\pokedex-entregable5\public\img\icon-p.png) ;
+  background-image: url('/public/img/icon-p.png') ;
   background-size: cover;
   color: black;
   font-weight: bold;
