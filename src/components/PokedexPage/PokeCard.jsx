@@ -14,8 +14,8 @@ const PokeCard = ({ url }) => {
 
    const navigate = useNavigate()
 
-   const handleClick = () =>{
-    navigate(`pokedex/${pokemon.id}`)
+   const handleClick = () => {
+    navigate(`${pokemon.id}`)
    }
 
    const firstType = pokemon?.types[0].type.name

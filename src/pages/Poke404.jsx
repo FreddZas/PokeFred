@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Homepage from './HomePage'
+
 
 const Poke404 = () => {
   return (

@@ -6,16 +6,16 @@ import './styles/PokeIdPage.css'
 const PokeIdPage = () => {
 
   const { id } = useParams()
-
+  
   const url = `https://pokeapi.co/api/v2/pokemon/${id}/`
-
+  
   const [pokemon, getSinglePokemon] = useFetch(url)
-
+  
   useEffect(() => {
     getSinglePokemon()
-
+    
   }, [id])
-
+  
   const navigate = useNavigate()
 
   const handleSubmit = e => {

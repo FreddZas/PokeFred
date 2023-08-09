@@ -16,7 +16,7 @@ const HomePage = () => {
   const handleSubmit = e => {
     e.preventDefault()
     dispatch(setTrainerG(inputTrainer.current.value.trim())) //Metodo trim quita los espacios solo del inicio y final
-    navigate('/pokedex')
+    navigate(`/pokedex`)
   }
 
   return (
@@ -27,7 +27,7 @@ const HomePage = () => {
       <h2 className="home__trainer">Hi trainer!</h2>
       <p className="home__message">To start with the app, give me your name trainer</p>
       <form className="home__form" onSubmit={handleSubmit}>
-        <input className="first__input"  ref={inputTrainer} type="text" placeholder="Name"/>
+        <input className="first__input"  ref={inputTrainer} type="text" placeholder=" Your Name"/>
         <button className="home__btm">Gotta catch 'em all!</button>
       </form>
     

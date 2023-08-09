@@ -102,7 +102,7 @@ const PokedexPage = () => {
           currentPage={currentPage}
           totalPages={totalPages}
           onPageChange={handlePageChange}
-          pagesToShow={10}
+          pagesToShow={5}
         />
       <div className="pokecard__container">
         {
@@ -123,7 +123,7 @@ const PokedexPage = () => {
           currentPage={currentPage}
           totalPages={totalPages}
           onPageChange={handlePageChange}
-          pagesToShow={10}
+          pagesToShow={5}
         />
       </footer>
     </div>
