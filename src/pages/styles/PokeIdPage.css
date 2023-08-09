@@ -192,7 +192,7 @@
 .card__type {
     display: flex;
     justify-content: center;
-    gap: 1.5em;
+    gap: .5em;
     padding: .5em;
     font-weight: 400;
     margin-left: 5em;
@@ -201,7 +201,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5em;
+    gap: .5em;
     padding: .5em;
     font-weight: 400;
     margin-right: 2em;
