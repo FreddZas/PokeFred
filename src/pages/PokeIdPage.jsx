@@ -33,9 +33,9 @@ const PokeIdPage = () => {
   return (
     <article>
    
-    <header className="header-pokedex">
+    <header className="header__pokedex">
       <Link to="/pokedex">
-        <div className="header-logo">
+        <div className="header__logo">
             <img
               src="./img/pokedex.png"
               alt="Pokedex"
@@ -43,9 +43,9 @@ const PokeIdPage = () => {
             </div>
           </Link>
 
-          <div className="headerblack"></div>
-        <div className="header__circle-outer">
-          <div className="header__circle-inner"></div>
+          <div className="darkheader"></div>
+        <div className="header__circle__out">
+          <div className="header__circle__in"></div>
         </div>
     </header>
     
@@ -70,7 +70,9 @@ const PokeIdPage = () => {
         </form>
 
         <h2 className={`title__name ${firstType}-color`}>
+        <hr className="darkline__one_o"></hr>
           {pokemon?.name}
+        <hr className="darkline__one_t"></hr>
         </h2>
 
         <ul className="card__measures">
@@ -114,8 +116,8 @@ const PokeIdPage = () => {
           </div>
         </ul>
 
-        <div>
-          <h4 className="card__stats-title">Stats</h4>
+        <div className="stats">
+          <h4 className="card__stats-title">Stats <hr className="darkline__two"></hr></h4>
           <ul className="card__stats">
             {pokemon?.stats.map((statInfo) => (
               <li className="card__stats-list" key={statInfo.stat.url}>
@@ -129,7 +131,7 @@ const PokeIdPage = () => {
                 </div>
                 <div className="card__stat-container">
                   <div
-                    className="card__stat-value"
+                    className={`card__stat-value ${firstType}-gradient`}
                     style={{
                       width: `calc(${statInfo.base_stat} / ${pokeBaseStat} * 100%)`,
                     }}
@@ -143,7 +145,7 @@ const PokeIdPage = () => {
 
       <div>
         <div className="mov-container">
-          <h4 className="card__mov-title">Movements</h4>
+          <h4 className="card__mov-title">Movements <hr className="darkline__two_two"></hr></h4>
           <ul className="card__mov">
             {pokemon?.moves.map((moveInfo) => (
               <li className="card__mov-list" key={moveInfo.move.url}>
